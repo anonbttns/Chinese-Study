@@ -306,7 +306,7 @@
 
 <script>
   // วาง Web app URL จาก Google Apps Script ที่นี่
-  const GAS_URL = "https://script.google.com/macros/s/AKfycbwTlKyeNWZMuq8sO-ujkoNh2FlRrxF5lHpKefxH01QEYIkCojZdAUiwm5fPUAyI82tO/exec";
+  const GAS_URL = "https://script.google.com/macros/s/AKfycbwTlKyeNWZMuq8sO-ujkoNh2FlRrxF5lHpKefxH01QEYIkCojZdAUiwm5fPUAyI82t0/exec";
 
   const EXPENSE_CATEGORIES = [
     { name: "ค่าที่พัก", subs: [] },
@@ -383,6 +383,7 @@
     if(custom) parts.push(custom);
     return parts.join(", ");
   }
+  const form = document.getElementById("entryForm");
   const statusEl = document.getElementById("status");
   const listEl = document.getElementById("entryList");
   const toggleBtns = document.querySelectorAll(".type-toggle button");
